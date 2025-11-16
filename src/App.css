@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+body {
+  margin: 0 auto;
+  width: 60vw;
+  background-color: rgb(36, 36, 39);
+  line-height: 1.5em;
+  font-family: Arial, sans-serif;
+  font-size: 1.3em;
+  color: rgb(241, 241, 241);
+}
+
+.fa-brands.fa-github.fa-xl {
+  color: rgb(103, 0, 172);
+}
+
+.fa-brands.fa-github.fa-xl:hover {
+  color: rgb(143, 0, 238);
+  text-shadow: 0px 0px 10px rgb(143, 0, 238);
+}
+
+.fa-regular.fa-envelope.fa-xl {
+  color: #d24a00;
+}
+
+.fa-regular.fa-envelope.fa-xl:hover {
+  color: #ff610b;
+  text-shadow: 0px 0px 10px #ff610b;
+}
+
+.fa-brands.fa-linkedin-in.fa-xl {
+  color: #74c0fc;
+}
+
+.fa-brands.fa-linkedin-in.fa-xl:hover {
+  color: #92d0ff;
+  text-shadow: 0px 0px 10px #92d0ff;
+}
+
+.fa-brands.fa-discord.fa-xl {
+  color: rgb(237, 237, 237);
+}
+
+.fa-brands.fa-discord.fa-xl:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(242, 242, 242);
+}
+
+.fa-brands.fa-square-github.fa-xl {
+  color: whitesmoke;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.gradient-line-1 {
+  height: 3px;
+  width: 60vw;
+  background: linear-gradient(
+    90deg,
+    rgb(210, 5, 210),
+    rgb(115, 0, 255),
+    rgb(56, 185, 255),
+    rgb(255, 0, 170)
+  );
+  background-size: 200%;
+  animation: animation 5s infinite alternate;
+}
+
+@keyframes animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.projects {
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 1px 1px 5px rgb(15, 5, 18);
+  display: flow-root;
+  transition: transform 0.3s ease;
+}
+
+.projects:hover {
+  transform: translateY(-4px);
+}
+
+.project-title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.project-tech {
+  float: left;
+  margin: 3px 6px 6px 0px;
+  padding: 3px 5px 3px 5px;
+  line-height: normal;
+  font-size: 0.6em;
+  background-color: rgb(103, 0, 172);
+}
+
+.project-content {
+  clear: both;
+  font-size: 0.8em;
+}
